@@ -14,8 +14,9 @@ namespace week05
             // a.playingwithforloops();
             birthday_party peter = new birthday_party();
             peter.setupPartyList();
+            peter.reverseprintPartyList();
             Console.WriteLine(peter.printPartyList());
-            
+            Console.WriteLine(peter.reverseprintPartyList());
            
         }
     }
@@ -126,6 +127,23 @@ namespace week05
             return inviteList;
             
         }
-        
+        public string reverseprintPartyList()
+        {
+            string inviteList = "*--";
+            temporary = tail;
+
+            while (temporary.prev_dog != null)
+            {
+
+
+                inviteList += temporary.dog_name + " * --- * ";
+
+
+                temporary = temporary.prev_dog;
+            }
+            inviteList += temporary.dog_name + " * --- * ";
+            return inviteList;
+
+        }
     }
 }
