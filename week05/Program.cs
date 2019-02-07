@@ -12,6 +12,7 @@ namespace week05
         {
             var a = new testquestion();
             a.playingwithforloops();
+           
         }
     }
     class testquestion
@@ -33,6 +34,41 @@ namespace week05
         {
             myfavvariable++;
             return true;
+        }
+    }
+    class dog
+    {
+        public dog(string name, string breed)
+        {
+            dog_name = name;
+            dog_breed = breed;
+        }
+
+        public dog()
+        {
+        }
+
+        public string dog_name;
+        public string dog_breed;
+        public dog next_dog;
+        public dog prev_dog;
+
+    }
+    class birthday_party
+    {
+        public dog peanut;
+        public dog fifi;
+        public dog clarence;
+        public dog roy;
+
+        public dog head;
+        public dog tail;
+        public dog temporary;
+
+
+        public void mapini()
+        {
+            peanut = new dog();
         }
     }
 }
