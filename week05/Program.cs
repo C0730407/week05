@@ -44,9 +44,7 @@ namespace week05
             dog_breed = breed;
         }
 
-        public dog()
-        {
-        }
+     
 
         public string dog_name;
         public string dog_breed;
@@ -65,10 +63,33 @@ namespace week05
         public dog tail;
         public dog temporary;
 
+       
 
         public void mapini()
         {
-            peanut = new dog();
+            peanut = new dog("peanut","bichon");
+            fifi = new dog("fifi","poodle");
+            clarence = new dog("clarence","german");
+            roy = new dog("roy","beagle");
+
+            
+            peanut.prev_dog = null;
+            peanut.next_dog = fifi;
+
+            fifi.prev_dog = peanut;
+            fifi.next_dog = clarence;
+
+            clarence.prev_dog = fifi;
+            clarence.next_dog = roy;
+
+           roy.prev_dog =clarence;
+           roy.next_dog =null;
+            head = peanut;
+            tail = roy;
+
+
+
         }
+        public void run()
     }
 }
