@@ -10,12 +10,15 @@ namespace week05
     {
         static void Main(string[] args)
         {
-            var a = new testquestion();
-            a.playingwithforloops();
+            // var a = new testquestion();
+            // a.playingwithforloops();
+            birthday_party peter = new birthday_party();
+            peter.run();
+            
            
         }
     }
-    class testquestion
+   /* class testquestion
     {
         public int myfavvariable = 0;
         public void playingwithforloops()
@@ -35,7 +38,7 @@ namespace week05
             myfavvariable++;
             return true;
         }
-    }
+    }*/
     class dog
     {
         public dog(string name, string breed)
@@ -91,5 +94,18 @@ namespace week05
 
         }
         public void run()
+        {
+            this.mapini();
+            Console.WriteLine(dognames);
+        }
+
+        public void dognames()
+        {
+            head = peanut;
+            while(temporary.next_dog!=null)
+            {
+                Console.WriteLine(temporary.dog_name);
+            }
+        }
     }
 }
